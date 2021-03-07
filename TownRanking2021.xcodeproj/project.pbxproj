@@ -14,6 +14,7 @@
 		FD0DFAC525F3BF56000B79AB /* TownRanking2021Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFAC425F3BF56000B79AB /* TownRanking2021Tests.swift */; };
 		FD0DFAD025F3BF56000B79AB /* TownRanking2021UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFACF25F3BF56000B79AB /* TownRanking2021UITests.swift */; };
 		FD0DFAE725F516AA000B79AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0DFAE625F516AA000B79AB /* Color.xcassets */; };
+		FD0DFAED25F517C3000B79AB /* Color+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFAEC25F517C3000B79AB /* Color+SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FD0DFACF25F3BF56000B79AB /* TownRanking2021UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRanking2021UITests.swift; sourceTree = "<group>"; };
 		FD0DFAD125F3BF56000B79AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0DFAE625F516AA000B79AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		FD0DFAEC25F517C3000B79AB /* Color+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				FD0DFAB225F3BF55000B79AB /* TownRanking2021App.swift */,
 				FD0DFAB425F3BF55000B79AB /* ContentView.swift */,
+				FD0DFAEB25F517A4000B79AB /* Extension */,
 				FD0DFAB625F3BF56000B79AB /* Assets.xcassets */,
 				FD0DFAE625F516AA000B79AB /* Color.xcassets */,
 				FD0DFABB25F3BF56000B79AB /* Info.plist */,
@@ -131,6 +134,14 @@
 				FD0DFAD125F3BF56000B79AB /* Info.plist */,
 			);
 			path = TownRanking2021UITests;
+			sourceTree = "<group>";
+		};
+		FD0DFAEB25F517A4000B79AB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DFAEC25F517C3000B79AB /* Color+SwiftUI.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0DFAED25F517C3000B79AB /* Color+SwiftUI.swift in Sources */,
 				FD0DFAB525F3BF55000B79AB /* ContentView.swift in Sources */,
 				FD0DFAB325F3BF55000B79AB /* TownRanking2021App.swift in Sources */,
 			);
