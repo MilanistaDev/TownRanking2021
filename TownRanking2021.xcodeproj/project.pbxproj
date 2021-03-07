@@ -13,6 +13,7 @@
 		FD0DFABA25F3BF56000B79AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0DFAB925F3BF56000B79AB /* Preview Assets.xcassets */; };
 		FD0DFAC525F3BF56000B79AB /* TownRanking2021Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFAC425F3BF56000B79AB /* TownRanking2021Tests.swift */; };
 		FD0DFAD025F3BF56000B79AB /* TownRanking2021UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFACF25F3BF56000B79AB /* TownRanking2021UITests.swift */; };
+		FD0DFAE725F516AA000B79AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0DFAE625F516AA000B79AB /* Color.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		FD0DFACB25F3BF56000B79AB /* TownRanking2021UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TownRanking2021UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0DFACF25F3BF56000B79AB /* TownRanking2021UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRanking2021UITests.swift; sourceTree = "<group>"; };
 		FD0DFAD125F3BF56000B79AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0DFAE625F516AA000B79AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				FD0DFAB225F3BF55000B79AB /* TownRanking2021App.swift */,
 				FD0DFAB425F3BF55000B79AB /* ContentView.swift */,
 				FD0DFAB625F3BF56000B79AB /* Assets.xcassets */,
+				FD0DFAE625F516AA000B79AB /* Color.xcassets */,
 				FD0DFABB25F3BF56000B79AB /* Info.plist */,
 				FD0DFAB825F3BF56000B79AB /* Preview Content */,
 			);
@@ -235,6 +238,7 @@
 			files = (
 				FD0DFABA25F3BF56000B79AB /* Preview Assets.xcassets in Resources */,
 				FD0DFAB725F3BF56000B79AB /* Assets.xcassets in Resources */,
+				FD0DFAE725F516AA000B79AB /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
