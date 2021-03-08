@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UpperTabView: View {
 
-    @Binding var isRent: Bool
+    @Binding var selection: TabType
     let geometrySize: CGSize
 
     var body: some View {
@@ -17,37 +17,37 @@ struct UpperTabView: View {
             HStack(spacing: .zero) {
                 Button(action: {
                     withAnimation(.linear(duration: 0.3)) {
-                        self.isRent = true
+                        self.selection = .rent
                     }
                 }, label: {
                     Text("借りて住みたい")
-                        .foregroundColor(self.isRent ?
+                        .foregroundColor(self.selection == .rent ?
                                             .rentOrange: .gray)
                          .font(.headline)
                 })
                 .frame(width: geometrySize.width / 2, height: 44.0)
                 Button(action: {
                     withAnimation(.linear(duration: 0.3)) {
-                        self.isRent = false
+                        self.selection = .buy
                     }
                 }, label: {
                     Text("買って住みたい")
-                        .foregroundColor(self.isRent ?
+                        .foregroundColor(self.selection == .rent ?
                                             .gray: .buyBlue)
                         .font(.headline)
                 })
                 .frame(width: geometrySize.width / 2, height: 44.0)
             }
             Rectangle()
-                .fill(self.isRent ? Color.rentOrange: Color.buyBlue)
+                .fill(self.selection == .rent ? Color.rentOrange: Color.buyBlue)
                 .frame(width: geometrySize.width / 2, height: 2.0)
-                .offset(x: self.isRent ? .zero: geometrySize.width / 2, y: .zero)
+                .offset(x: self.selection == .rent ? .zero: geometrySize.width / 2, y: .zero)
         }
     }
 }
 
 struct UpperTabView_Previews: PreviewProvider {
     static var previews: some View {
-        UpperTabView(isRent: .constant(true), geometrySize: UIScreen.main.bounds.size)
+        UpperTabView(selection: .constant(.rent), geometrySize: UIScreen.main.bounds.size)
     }
 }

@@ -7,14 +7,19 @@
 
 import SwiftUI
 
+enum TabType: Int {
+    case rent
+    case buy
+}
+
 struct ContentView: View {
-    @State private var isRent = true
+    @State private var selection: TabType = .rent
     
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
                 VStack {
-                    UpperTabView(isRent: $isRent, geometrySize: geometry.size)
+                    UpperTabView(selection: $selection, geometrySize: geometry.size)
                     Spacer()
                 }
                 .navigationBarTitle("住みたい街ランキング2021(首都圏)",
