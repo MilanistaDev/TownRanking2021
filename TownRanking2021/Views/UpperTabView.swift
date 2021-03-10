@@ -16,9 +16,7 @@ struct UpperTabView: View {
         VStack(alignment: .leading, spacing: .zero) {
             HStack(spacing: .zero) {
                 Button(action: {
-                    withAnimation(.linear(duration: 0.3)) {
-                        self.selection = .rent
-                    }
+                    self.selection = .rent
                 }, label: {
                     Text("借りて住みたい")
                         .foregroundColor(self.selection == .rent ?
@@ -27,9 +25,7 @@ struct UpperTabView: View {
                 })
                 .frame(width: geometrySize.width / 2, height: 44.0)
                 Button(action: {
-                    withAnimation(.linear(duration: 0.3)) {
-                        self.selection = .buy
-                    }
+                    self.selection = .buy
                 }, label: {
                     Text("買って住みたい")
                         .foregroundColor(self.selection == .rent ?
@@ -42,6 +38,7 @@ struct UpperTabView: View {
                 .fill(self.selection == .rent ? Color.rentOrange: Color.buyBlue)
                 .frame(width: geometrySize.width / 2, height: 2.0)
                 .offset(x: self.selection == .rent ? .zero: geometrySize.width / 2, y: .zero)
+                .animation(.linear(duration: 0.3))
         }
     }
 }

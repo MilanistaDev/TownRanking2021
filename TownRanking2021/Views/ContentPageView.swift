@@ -19,6 +19,7 @@ struct ContentPageView: View {
                 .tag(TabType.buy)
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        .animation(.linear(duration: 0.3))
     }
 }
 
