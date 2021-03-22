@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
-                VStack {
+                VStack(spacing: .zero) {
                     UpperTabView(selection: $selection, geometrySize: geometry.size)
                     ContentPageView(selection: $selection)
                 }

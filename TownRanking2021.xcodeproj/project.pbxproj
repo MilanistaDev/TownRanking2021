@@ -17,6 +17,7 @@
 		FD0DFAED25F517C3000B79AB /* Color+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFAEC25F517C3000B79AB /* Color+SwiftUI.swift */; };
 		FD0DFAF625F51919000B79AB /* UpperTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFAF525F51919000B79AB /* UpperTabView.swift */; };
 		FD0DFAFE25F6CE77000B79AB /* ContentPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFAFD25F6CE77000B79AB /* ContentPageView.swift */; };
+		FD0DFB4A2608C01F000B79AB /* TownRankingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB492608C01F000B79AB /* TownRankingListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FD0DFAEC25F517C3000B79AB /* Color+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+SwiftUI.swift"; sourceTree = "<group>"; };
 		FD0DFAF525F51919000B79AB /* UpperTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabView.swift; sourceTree = "<group>"; };
 		FD0DFAFD25F6CE77000B79AB /* ContentPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPageView.swift; sourceTree = "<group>"; };
+		FD0DFB492608C01F000B79AB /* TownRankingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRankingListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				FD0DFAB425F3BF55000B79AB /* ContentView.swift */,
 				FD0DFAF525F51919000B79AB /* UpperTabView.swift */,
 				FD0DFAFD25F6CE77000B79AB /* ContentPageView.swift */,
+				FD0DFB492608C01F000B79AB /* TownRankingListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0DFAED25F517C3000B79AB /* Color+SwiftUI.swift in Sources */,
+				FD0DFB4A2608C01F000B79AB /* TownRankingListView.swift in Sources */,
 				FD0DFAB525F3BF55000B79AB /* ContentView.swift in Sources */,
 				FD0DFAFE25F6CE77000B79AB /* ContentPageView.swift in Sources */,
 				FD0DFAB325F3BF55000B79AB /* TownRanking2021App.swift in Sources */,

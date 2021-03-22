@@ -13,13 +13,14 @@ struct ContentPageView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            Text("Rent")
+            TownRankingListView(selection: selection)
                 .tag(TabType.rent)
-            Text("Buy")
+            TownRankingListView(selection: selection)
                 .tag(TabType.buy)
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         .animation(.linear(duration: 0.3))
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
