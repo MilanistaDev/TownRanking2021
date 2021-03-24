@@ -15,10 +15,7 @@ struct TownRankingListView: View {
         ScrollView {
             LazyVGrid(columns: [GridItem()], spacing: 0.0) {
                 ForEach(0 ..< 10) { index in
-                    Rectangle()
-                        .fill(selection == .rent ? Color.rentOrange: Color.buyBlue)
-                        .frame(height: 50)
-                        .cornerRadius(8.0)
+                    TownRowView(selection: selection, rank: 1, isRankUp: true, rankFluctuation: 10)
                         .padding(.bottom, 10.0)
                 }
             }
