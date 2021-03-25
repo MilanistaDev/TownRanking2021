@@ -14,9 +14,17 @@ struct TownRankingListView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem()], spacing: 0.0) {
-                ForEach(0 ..< 10) { index in
-                    TownRowView(selection: selection, rank: 1, isRankUp: true, rankFluctuation: 10)
-                        .padding(.bottom, 10.0)
+                Section {
+                    ForEach(0 ..< 10) { index in
+                        TownRowView(selection: selection, rank: 1, isRankUp: true, rankFluctuation: 10)
+                            .padding(.bottom, 10.0)
+                    }
+                }
+                Section {
+                    ForEach(0 ..< 10) { index in
+                        SubTownRowView(selection: selection, rank: 11, isRankUp: true, rankFluctuation: 30)
+                        Divider()
+                    }
                 }
             }
             .padding(.all, 16.0)
