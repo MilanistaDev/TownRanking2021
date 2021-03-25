@@ -19,6 +19,7 @@
 		FD0DFAFE25F6CE77000B79AB /* ContentPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFAFD25F6CE77000B79AB /* ContentPageView.swift */; };
 		FD0DFB4A2608C01F000B79AB /* TownRankingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB492608C01F000B79AB /* TownRankingListView.swift */; };
 		FD0DFB4F26090883000B79AB /* TownRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB4E26090883000B79AB /* TownRowView.swift */; };
+		FD0DFB54260D1D99000B79AB /* SubTownRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB53260D1D99000B79AB /* SubTownRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FD0DFAFD25F6CE77000B79AB /* ContentPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPageView.swift; sourceTree = "<group>"; };
 		FD0DFB492608C01F000B79AB /* TownRankingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRankingListView.swift; sourceTree = "<group>"; };
 		FD0DFB4E26090883000B79AB /* TownRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRowView.swift; sourceTree = "<group>"; };
+		FD0DFB53260D1D99000B79AB /* SubTownRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTownRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				FD0DFAFD25F6CE77000B79AB /* ContentPageView.swift */,
 				FD0DFB492608C01F000B79AB /* TownRankingListView.swift */,
 				FD0DFB4E26090883000B79AB /* TownRowView.swift */,
+				FD0DFB53260D1D99000B79AB /* SubTownRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				FD0DFB4A2608C01F000B79AB /* TownRankingListView.swift in Sources */,
 				FD0DFAB525F3BF55000B79AB /* ContentView.swift in Sources */,
 				FD0DFAFE25F6CE77000B79AB /* ContentPageView.swift in Sources */,
+				FD0DFB54260D1D99000B79AB /* SubTownRowView.swift in Sources */,
 				FD0DFAB325F3BF55000B79AB /* TownRanking2021App.swift in Sources */,
 				FD0DFB4F26090883000B79AB /* TownRowView.swift in Sources */,
 				FD0DFAF625F51919000B79AB /* UpperTabView.swift in Sources */,
