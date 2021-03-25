@@ -25,6 +25,7 @@
 		FD0DFB67260D4C2F000B79AB /* TownInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB66260D4C2F000B79AB /* TownInfo.swift */; };
 		FD0DFB6D260D4D0E000B79AB /* TownRanking2021.json in Resources */ = {isa = PBXBuildFile; fileRef = FD0DFB6C260D4D0E000B79AB /* TownRanking2021.json */; };
 		FD0DFB75260D4D82000B79AB /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB74260D4D82000B79AB /* DummyData.swift */; };
+		FD0DFB7B260D5116000B79AB /* TownRankingFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB7A260D5116000B79AB /* TownRankingFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		FD0DFB66260D4C2F000B79AB /* TownInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownInfo.swift; sourceTree = "<group>"; };
 		FD0DFB6C260D4D0E000B79AB /* TownRanking2021.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TownRanking2021.json; sourceTree = "<group>"; };
 		FD0DFB74260D4D82000B79AB /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		FD0DFB7A260D5116000B79AB /* TownRankingFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRankingFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				FD0DFAF425F518FE000B79AB /* Views */,
 				FD0DFB5D260D4BF1000B79AB /* Models */,
 				FD0DFAEB25F517A4000B79AB /* Extension */,
+				FD0DFB79260D50FE000B79AB /* API */,
 				FD0DFB6B260D4C56000B79AB /* Data */,
 				FD0DFAB625F3BF56000B79AB /* Assets.xcassets */,
 				FD0DFAE625F516AA000B79AB /* Color.xcassets */,
@@ -196,6 +199,14 @@
 				FD0DFB74260D4D82000B79AB /* DummyData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FD0DFB79260D50FE000B79AB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DFB7A260D5116000B79AB /* TownRankingFetcher.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 				FD0DFAED25F517C3000B79AB /* Color+SwiftUI.swift in Sources */,
 				FD0DFB4A2608C01F000B79AB /* TownRankingListView.swift in Sources */,
 				FD0DFAB525F3BF55000B79AB /* ContentView.swift in Sources */,
+				FD0DFB7B260D5116000B79AB /* TownRankingFetcher.swift in Sources */,
 				FD0DFAFE25F6CE77000B79AB /* ContentPageView.swift in Sources */,
 				FD0DFB54260D1D99000B79AB /* SubTownRowView.swift in Sources */,
 				FD0DFB59260D2764000B79AB /* ExpandButtonView.swift in Sources */,
