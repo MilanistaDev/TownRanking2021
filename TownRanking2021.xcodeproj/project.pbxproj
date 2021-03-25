@@ -21,6 +21,8 @@
 		FD0DFB4F26090883000B79AB /* TownRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB4E26090883000B79AB /* TownRowView.swift */; };
 		FD0DFB54260D1D99000B79AB /* SubTownRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB53260D1D99000B79AB /* SubTownRowView.swift */; };
 		FD0DFB59260D2764000B79AB /* ExpandButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB58260D2764000B79AB /* ExpandButtonView.swift */; };
+		FD0DFB5F260D4C0C000B79AB /* TownRankingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB5E260D4C0C000B79AB /* TownRankingData.swift */; };
+		FD0DFB67260D4C2F000B79AB /* TownInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB66260D4C2F000B79AB /* TownInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		FD0DFB4E26090883000B79AB /* TownRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRowView.swift; sourceTree = "<group>"; };
 		FD0DFB53260D1D99000B79AB /* SubTownRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTownRowView.swift; sourceTree = "<group>"; };
 		FD0DFB58260D2764000B79AB /* ExpandButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandButtonView.swift; sourceTree = "<group>"; };
+		FD0DFB5E260D4C0C000B79AB /* TownRankingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRankingData.swift; sourceTree = "<group>"; };
+		FD0DFB66260D4C2F000B79AB /* TownInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +117,9 @@
 			children = (
 				FD0DFAB225F3BF55000B79AB /* TownRanking2021App.swift */,
 				FD0DFAF425F518FE000B79AB /* Views */,
+				FD0DFB5D260D4BF1000B79AB /* Models */,
 				FD0DFAEB25F517A4000B79AB /* Extension */,
+				FD0DFB6B260D4C56000B79AB /* Data */,
 				FD0DFAB625F3BF56000B79AB /* Assets.xcassets */,
 				FD0DFAE625F516AA000B79AB /* Color.xcassets */,
 				FD0DFABB25F3BF56000B79AB /* Info.plist */,
@@ -168,6 +174,22 @@
 				FD0DFB58260D2764000B79AB /* ExpandButtonView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FD0DFB5D260D4BF1000B79AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DFB5E260D4C0C000B79AB /* TownRankingData.swift */,
+				FD0DFB66260D4C2F000B79AB /* TownInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD0DFB6B260D4C56000B79AB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +328,8 @@
 				FD0DFAFE25F6CE77000B79AB /* ContentPageView.swift in Sources */,
 				FD0DFB54260D1D99000B79AB /* SubTownRowView.swift in Sources */,
 				FD0DFB59260D2764000B79AB /* ExpandButtonView.swift in Sources */,
+				FD0DFB67260D4C2F000B79AB /* TownInfo.swift in Sources */,
+				FD0DFB5F260D4C0C000B79AB /* TownRankingData.swift in Sources */,
 				FD0DFAB325F3BF55000B79AB /* TownRanking2021App.swift in Sources */,
 				FD0DFB4F26090883000B79AB /* TownRowView.swift in Sources */,
 				FD0DFAF625F51919000B79AB /* UpperTabView.swift in Sources */,
