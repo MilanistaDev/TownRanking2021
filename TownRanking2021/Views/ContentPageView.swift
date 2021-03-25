@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentPageView: View {
 
     @Binding var selection: TabType
+    let safeAreaBottomHeight: CGFloat
     
     var body: some View {
         TabView(selection: $selection) {
-            TownRankingListView(selection: selection)
+            TownRankingListView(selection: selection,
+                                safeAreaBottomHeight: safeAreaBottomHeight)
                 .tag(TabType.rent)
-            TownRankingListView(selection: selection)
+            TownRankingListView(selection: selection,
+                                safeAreaBottomHeight: safeAreaBottomHeight)
                 .tag(TabType.buy)
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -26,6 +29,7 @@ struct ContentPageView: View {
 
 struct ContentPageView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentPageView(selection: .constant(.rent))
+        ContentPageView(selection: .constant(.rent),
+                        safeAreaBottomHeight: .zero)
     }
 }

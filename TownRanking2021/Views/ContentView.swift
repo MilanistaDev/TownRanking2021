@@ -20,7 +20,8 @@ struct ContentView: View {
             NavigationView {
                 VStack(spacing: .zero) {
                     UpperTabView(selection: $selection, geometrySize: geometry.size)
-                    ContentPageView(selection: $selection)
+                    ContentPageView(selection: $selection,
+                                    safeAreaBottomHeight: geometry.safeAreaInsets.bottom)
                 }
                 .navigationBarTitle("住みたい街ランキング2021(首都圏)",
                                     displayMode: .inline)

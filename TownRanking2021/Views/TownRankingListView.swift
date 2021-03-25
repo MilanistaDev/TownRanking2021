@@ -10,6 +10,7 @@ import SwiftUI
 struct TownRankingListView: View {
     
     let selection: TabType
+    let safeAreaBottomHeight: CGFloat
     @State private var isExpanded = false
     
     var body: some View {
@@ -31,6 +32,9 @@ struct TownRankingListView: View {
                 }
             }
             .padding(.all, 16.0)
+            ExpandButtonView(selection: selection, isExpanded: $isExpanded)
+                .padding(.horizontal, 16.0)
+                .padding(.bottom, 16.0 + safeAreaBottomHeight)
         }
         .background(Color.gridBackground)
     }
@@ -38,6 +42,7 @@ struct TownRankingListView: View {
 
 struct TownRankingListView_Previews: PreviewProvider {
     static var previews: some View {
-        TownRankingListView(selection: .rent)
+        TownRankingListView(selection: .rent,
+                            safeAreaBottomHeight: .zero)
     }
 }
