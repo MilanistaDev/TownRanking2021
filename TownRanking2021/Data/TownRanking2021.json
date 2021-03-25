@@ -1,0 +1,286 @@
+{
+    "townRankingsForRent": [
+        {
+            "rank": 1,
+            "townName": "本厚木",
+            "isRankUp": true,
+            "rankFluctuation": 3,
+            "availableLine": "小田急小田原線"
+        },
+        {
+            "rank": 2,
+            "townName": "大宮",
+            "isRankUp": true,
+            "rankFluctuation": 3,
+            "availableLine": "JR京浜東北・根岸線ほか"
+        },
+        {
+            "rank": 3,
+            "townName": "葛西",
+            "isRankUp": false,
+            "rankFluctuation": 1,
+            "availableLine": "東京メトロ東西線"
+        },
+        {
+            "rank": 4,
+            "townName": "八王子",
+            "isRankUp": true,
+            "rankFluctuation": 3,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 5,
+            "townName": "池袋",
+            "isRankUp": false,
+            "rankFluctuation": 4,
+            "availableLine": "JR山手線ほか"
+        },
+        {
+            "rank": 6,
+            "townName": "千葉",
+            "isRankUp": true,
+            "rankFluctuation": 8,
+            "availableLine": "JR総武線ほか"
+        },
+        {
+            "rank": 7,
+            "townName": "蕨",
+            "isRankUp": true,
+            "rankFluctuation": 4,
+            "availableLine": "JR京浜東北・根岸線"
+        },
+        {
+            "rank": 8,
+            "townName": "三鷹",
+            "isRankUp": true,
+            "rankFluctuation": 9,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 9,
+            "townName": "柏",
+            "isRankUp": true,
+            "rankFluctuation": 7,
+            "availableLine": "JR常磐線ほか"
+        },
+        {
+            "rank": 10,
+            "townName": "川崎",
+            "isRankUp": false,
+            "rankFluctuation": 7,
+            "availableLine": "JR東海道本線ほか"
+        },
+        {
+            "rank": 11,
+            "townName": "高円寺",
+            "isRankUp": true,
+            "rankFluctuation": 2,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 12,
+            "townName": "西川口",
+            "isRankUp": true,
+            "rankFluctuation": 8,
+            "availableLine": "JR京浜東北・根岸線"
+        },
+        {
+            "rank": 13,
+            "townName": "船橋",
+            "isRankUp": true,
+            "rankFluctuation": 8,
+            "availableLine": "JR総武線ほか"
+        },
+        {
+            "rank": 14,
+            "townName": "町田",
+            "isRankUp": true,
+            "rankFluctuation": 8,
+            "availableLine": "小田急小田原線ほか"
+        },
+        {
+            "rank": 15,
+            "townName": "荻窪",
+            "isRankUp": false,
+            "rankFluctuation": 7,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 16,
+            "townName": "三軒茶屋",
+            "isRankUp": false,
+            "rankFluctuation": 10,
+            "availableLine": "東急田園都市線ほか"
+        },
+        {
+            "rank": 17,
+            "townName": "川口",
+            "isRankUp": true,
+            "rankFluctuation": 15,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 18,
+            "townName": "吉祥寺",
+            "isRankUp": false,
+            "rankFluctuation": 9,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 19,
+            "townName": "新小岩",
+            "isRankUp": false,
+            "rankFluctuation": 1,
+            "availableLine": "JR総武線ほか"
+        },
+        {
+            "rank": 20,
+            "townName": "小岩",
+            "isRankUp": false,
+            "rankFluctuation": 0,
+            "availableLine": "JR総武線"
+        }
+    ],
+    "townRankingsForBuy": [
+        {
+            "rank": 1,
+            "townName": "勝どき",
+            "isRankUp": false,
+            "rankFluctuation": 0,
+            "availableLine": "都営大江戸線"
+        },
+        {
+            "rank": 2,
+            "townName": "白金高輪",
+            "isRankUp": true,
+            "rankFluctuation": 17,
+            "availableLine": "東京メトロ南北線ほか"
+        },
+        {
+            "rank": 3,
+            "townName": "本厚木",
+            "isRankUp": true,
+            "rankFluctuation": 8,
+            "availableLine": "小田急小田原線"
+        },
+        {
+            "rank": 4,
+            "townName": "三鷹",
+            "isRankUp": false,
+            "rankFluctuation": 1,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 5,
+            "townName": "北浦和",
+            "isRankUp": false,
+            "rankFluctuation": 1,
+            "availableLine": "JR京浜東北・根岸線"
+        },
+        {
+            "rank": 6,
+            "townName": "八王子",
+            "isRankUp": false,
+            "rankFluctuation": 0,
+            "availableLine": "JR中央線ほか"
+        },
+        {
+            "rank": 7,
+            "townName": "柏",
+            "isRankUp": true,
+            "rankFluctuation": 8,
+            "availableLine": "JR常磐線ほか"
+        },
+        {
+            "rank": 8,
+            "townName": "目黒",
+            "isRankUp": true,
+            "rankFluctuation": 13,
+            "availableLine": "JR山手線ほか"
+        },
+        {
+            "rank": 9,
+            "townName": "恵比寿",
+            "isRankUp": false,
+            "rankFluctuation": 7,
+            "availableLine": "JR山手線ほか"
+        },
+        {
+            "rank": 10,
+            "townName": "東京",
+            "isRankUp": false,
+            "rankFluctuation": 5,
+            "availableLine": "JR東海道本線ほか"
+        },
+        {
+            "rank": 11,
+            "townName": "橋本",
+            "isRankUp": true,
+            "rankFluctuation": 31,
+            "availableLine": "JR横浜線ほか"
+        },
+        {
+            "rank": 12,
+            "townName": "浦和",
+            "isRankUp": false,
+            "rankFluctuation": 5,
+            "availableLine": "JR京浜東北・根岸線ほか"
+        },
+        {
+            "rank": 13,
+            "townName": "千葉",
+            "isRankUp": true,
+            "rankFluctuation": 49,
+            "availableLine": "JR総武線ほか"
+        },
+        {
+            "rank": 14,
+            "townName": "平塚",
+            "isRankUp": true,
+            "rankFluctuation": 25,
+            "availableLine": "JR東海道本線ほか"
+        },
+        {
+            "rank": 15,
+            "townName": "大宮",
+            "isRankUp": true,
+            "rankFluctuation": 9,
+            "availableLine": "JR京浜東北・根岸線ほか"
+        },
+        {
+            "rank": 16,
+            "townName": "朝霞",
+            "isRankUp": true,
+            "rankFluctuation": 13,
+            "availableLine": "東武東上線"
+        },
+        {
+            "rank": 17,
+            "townName": "八街",
+            "isRankUp": true,
+            "rankFluctuation": 9,
+            "availableLine": "JR総武本線"
+        },
+        {
+            "rank": 18,
+            "townName": "川口",
+            "isRankUp": true,
+            "rankFluctuation": 9,
+            "availableLine": "JR京浜東北・根岸線"
+        },
+        {
+            "rank": 19,
+            "townName": "牛込柳町",
+            "isRankUp": true,
+            "rankFluctuation": 191,
+            "availableLine": "都営大江戸線"
+        },
+        {
+            "rank": 20,
+            "townName": "中目黒",
+            "isRankUp": false,
+            "rankFluctuation": 7,
+            "availableLine": "東京メトロ日比谷線ほか"
+        }
+    ]
+}

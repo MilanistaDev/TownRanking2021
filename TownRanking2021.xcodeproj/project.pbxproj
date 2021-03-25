@@ -23,6 +23,7 @@
 		FD0DFB59260D2764000B79AB /* ExpandButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB58260D2764000B79AB /* ExpandButtonView.swift */; };
 		FD0DFB5F260D4C0C000B79AB /* TownRankingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB5E260D4C0C000B79AB /* TownRankingData.swift */; };
 		FD0DFB67260D4C2F000B79AB /* TownInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB66260D4C2F000B79AB /* TownInfo.swift */; };
+		FD0DFB6D260D4D0E000B79AB /* TownRanking2021.json in Resources */ = {isa = PBXBuildFile; fileRef = FD0DFB6C260D4D0E000B79AB /* TownRanking2021.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FD0DFB58260D2764000B79AB /* ExpandButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandButtonView.swift; sourceTree = "<group>"; };
 		FD0DFB5E260D4C0C000B79AB /* TownRankingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRankingData.swift; sourceTree = "<group>"; };
 		FD0DFB66260D4C2F000B79AB /* TownInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownInfo.swift; sourceTree = "<group>"; };
+		FD0DFB6C260D4D0E000B79AB /* TownRanking2021.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TownRanking2021.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		FD0DFB6B260D4C56000B79AB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FD0DFB6C260D4D0E000B79AB /* TownRanking2021.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				FD0DFABA25F3BF56000B79AB /* Preview Assets.xcassets in Resources */,
 				FD0DFAB725F3BF56000B79AB /* Assets.xcassets in Resources */,
 				FD0DFAE725F516AA000B79AB /* Color.xcassets in Resources */,
+				FD0DFB6D260D4D0E000B79AB /* TownRanking2021.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
