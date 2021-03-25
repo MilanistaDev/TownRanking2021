@@ -10,6 +10,7 @@ import SwiftUI
 struct TownRankingListView: View {
     
     let selection: TabType
+    @State private var isExpanded = false
     
     var body: some View {
         ScrollView {
@@ -20,10 +21,12 @@ struct TownRankingListView: View {
                             .padding(.bottom, 10.0)
                     }
                 }
-                Section {
-                    ForEach(0 ..< 10) { index in
-                        SubTownRowView(selection: selection, rank: 11, isRankUp: true, rankFluctuation: 30)
-                        Divider()
+                if isExpanded {
+                    Section {
+                        ForEach(0 ..< 10) { index in
+                            SubTownRowView(selection: selection, rank: 11, isRankUp: true, rankFluctuation: 30)
+                            Divider()
+                        }
                     }
                 }
             }
