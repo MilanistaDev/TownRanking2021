@@ -26,6 +26,7 @@
 		FD0DFB6D260D4D0E000B79AB /* TownRanking2021.json in Resources */ = {isa = PBXBuildFile; fileRef = FD0DFB6C260D4D0E000B79AB /* TownRanking2021.json */; };
 		FD0DFB75260D4D82000B79AB /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB74260D4D82000B79AB /* DummyData.swift */; };
 		FD0DFB7B260D5116000B79AB /* TownRankingFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB7A260D5116000B79AB /* TownRankingFetcher.swift */; };
+		FD0DFB81260D5A5D000B79AB /* TownRankingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DFB80260D5A5D000B79AB /* TownRankingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		FD0DFB6C260D4D0E000B79AB /* TownRanking2021.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TownRanking2021.json; sourceTree = "<group>"; };
 		FD0DFB74260D4D82000B79AB /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		FD0DFB7A260D5116000B79AB /* TownRankingFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRankingFetcher.swift; sourceTree = "<group>"; };
+		FD0DFB80260D5A5D000B79AB /* TownRankingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownRankingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				FD0DFAB225F3BF55000B79AB /* TownRanking2021App.swift */,
 				FD0DFAF425F518FE000B79AB /* Views */,
+				FD0DFB7F260D56C4000B79AB /* ViewModel */,
 				FD0DFB5D260D4BF1000B79AB /* Models */,
 				FD0DFAEB25F517A4000B79AB /* Extension */,
 				FD0DFB79260D50FE000B79AB /* API */,
@@ -207,6 +210,14 @@
 				FD0DFB7A260D5116000B79AB /* TownRankingFetcher.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		FD0DFB7F260D56C4000B79AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DFB80260D5A5D000B79AB /* TownRankingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +364,7 @@
 				FD0DFAB325F3BF55000B79AB /* TownRanking2021App.swift in Sources */,
 				FD0DFB4F26090883000B79AB /* TownRowView.swift in Sources */,
 				FD0DFAF625F51919000B79AB /* UpperTabView.swift in Sources */,
+				FD0DFB81260D5A5D000B79AB /* TownRankingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
