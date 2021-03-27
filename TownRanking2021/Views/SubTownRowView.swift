@@ -9,9 +9,7 @@ import SwiftUI
 
 struct SubTownRowView: View {
     let selection: TabType
-    let rank: Int
-    let isRankUp: Bool
-    let rankFluctuation: Int
+    let townInfo: TownInfo
     
     var body: some View {
         HStack(spacing: 16.0) {
@@ -24,7 +22,7 @@ struct SubTownRowView: View {
                     .scaledToFit()
                     .frame(width: 30.0, height: 30.0)
                     .foregroundColor(selection == .rent ? .subRentOrange: .subBuyBlue)
-                Text(rank.description)
+                Text(townInfo.rank.description)
                     .font(.subheadline)
                     .bold()
                     .foregroundColor(.white)
@@ -34,7 +32,7 @@ struct SubTownRowView: View {
                     .fill(Color.clear)
                     .frame(width: 50.0, height: 50.0)
                 VStack(spacing: 4.0) {
-                    if !isRankUp && rankFluctuation == 0 {
+                    if !townInfo.isRankUp && townInfo.rankFluctuation == 0 {
                         Image(systemName: "minus.circle.fill")
                             .resizable()
                             .frame(width: 20.0, height: 20.0)
@@ -43,21 +41,21 @@ struct SubTownRowView: View {
                             .font(.footnote)
                             .foregroundColor(.gray)
                     } else {
-                        Image(systemName: isRankUp ? "arrow.up.circle.fill": "arrow.down.circle.fill")
+                        Image(systemName: townInfo.isRankUp ? "arrow.up.circle.fill": "arrow.down.circle.fill")
                             .resizable()
                             .frame(width: 20.0, height: 20.0)
-                            .foregroundColor(isRankUp ? .red: .blue)
-                        Text(rankFluctuation.description + (isRankUp ? "アップ": "ダウン"))
+                            .foregroundColor(townInfo.isRankUp ? .red: .blue)
+                        Text(townInfo.rankFluctuation.description + (townInfo.isRankUp ? "アップ": "ダウン"))
                             .font(.footnote)
-                            .foregroundColor(isRankUp ? .red: .blue)
+                            .foregroundColor(townInfo.isRankUp ? .red: .blue)
                     }
                 }
             }
             VStack(alignment: .leading, spacing: 4.0) {
-                Text("妙典")
+                Text(townInfo.townName)
                     .font(.subheadline)
                     .bold()
-                Text("東京メトロ東西線")
+                Text(townInfo.availableLine)
                     .lineLimit(nil)
                     .foregroundColor(.gray)
                     .font(.footnote)
@@ -72,13 +70,13 @@ struct SubTownRowView: View {
 
 struct SubTownRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SubTownRowView(selection: .rent, rank: 11, isRankUp: true, rankFluctuation: 10)
+        SubTownRowView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent[0])
             .previewLayout(PreviewLayout.sizeThatFits)
             .padding()
-        SubTownRowView(selection: .buy, rank: 20, isRankUp: false, rankFluctuation: 5)
+        SubTownRowView(selection: .buy, townInfo: dummyTownRankingData.townRankingsForBuy[0])
             .previewLayout(PreviewLayout.sizeThatFits)
             .padding()
-        SubTownRowView(selection: .rent, rank: 20, isRankUp: false, rankFluctuation: 0)
+        SubTownRowView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent[0])
             .previewLayout(PreviewLayout.sizeThatFits)
             .padding()
     }

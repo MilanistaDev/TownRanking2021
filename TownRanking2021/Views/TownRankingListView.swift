@@ -10,6 +10,7 @@ import SwiftUI
 struct TownRankingListView: View {
     
     let selection: TabType
+    let townInfo: [TownInfo]
     let safeAreaBottomHeight: CGFloat
     @State private var isExpanded = false
     
@@ -17,24 +18,29 @@ struct TownRankingListView: View {
         ScrollView {
             LazyVGrid(columns: [GridItem()], spacing: 0.0) {
                 Section {
-                    ForEach(0 ..< 10) { index in
-                        TownRowView(selection: selection, rank: 1, isRankUp: true, rankFluctuation: 10)
+                    ForEach(0 ..< min(townInfo.count, 10)) { index in
+                        TownRowView(selection: selection,
+                                    townInfo: townInfo[index])
                             .padding(.bottom, 10.0)
                     }
                 }
                 if isExpanded {
                     Section {
-                        ForEach(0 ..< 10) { index in
-                            SubTownRowView(selection: selection, rank: 11, isRankUp: true, rankFluctuation: 30)
+                        ForEach(min(townInfo.count, 10) ..< townInfo.count) { index in
+                            SubTownRowView(selection: selection,
+                                           townInfo: townInfo[index])
                             Divider()
                         }
                     }
                 }
             }
             .padding(.all, 16.0)
-            ExpandButtonView(selection: selection, isExpanded: $isExpanded)
-                .padding(.horizontal, 16.0)
-                .padding(.bottom, 16.0 + safeAreaBottomHeight)
+            // データ取得前は表示させない
+            if !townInfo.isEmpty {
+                ExpandButtonView(selection: selection, isExpanded: $isExpanded)
+                    .padding(.horizontal, 16.0)
+                    .padding(.bottom, 16.0 + safeAreaBottomHeight)
+            }
         }
         .background(Color.gridBackground)
     }
@@ -42,7 +48,7 @@ struct TownRankingListView: View {
 
 struct TownRankingListView_Previews: PreviewProvider {
     static var previews: some View {
-        TownRankingListView(selection: .rent,
+        TownRankingListView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent,
                             safeAreaBottomHeight: .zero)
     }
 }

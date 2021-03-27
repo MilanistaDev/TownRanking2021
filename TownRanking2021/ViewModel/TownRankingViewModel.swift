@@ -8,21 +8,18 @@
 import SwiftUI
 
 class TownRankingViewModel: ObservableObject {
-    @Published var townRankingData = initialData
-    @Published var isShowIndicator = true
     
+    @Published var townRankingData = initialData
     let fetcher = TownRankingFetcher()
 
     init() {
         fetcher.fetchTownRanking { result in
-            sleep(4)
             switch result {
             case .success(let townRankingData):
                 self.townRankingData = townRankingData
             case .failure(let error):
-                print(error.localizedDescription)
+                debugPrint(error.localizedDescription)
             }
-            self.isShowIndicator = false
         }
     }
 }
