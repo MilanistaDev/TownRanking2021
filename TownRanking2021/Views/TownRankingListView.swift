@@ -48,7 +48,35 @@ struct TownRankingListView: View {
 
 struct TownRankingListView_Previews: PreviewProvider {
     static var previews: some View {
-        TownRankingListView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent,
-                            safeAreaBottomHeight: .zero)
+        Group {
+            TownRankingListView(selection: .rent,
+                                townInfo: dummyTownRankingData.townRankingsForRent,
+                                safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("TownRankingListView(Rent, Light mode)")
+            TownRankingListView(selection: .rent,
+                                townInfo: dummyTownRankingData.townRankingsForRent,
+                                safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("TownRankingListView(Rent, Dark mode)")
+            TownRankingListView(selection: .buy,
+                                townInfo: dummyTownRankingData.townRankingsForBuy,
+                                safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("TownRankingListView(Buy, Light mode)")
+            TownRankingListView(selection: .buy,
+                                townInfo: dummyTownRankingData.townRankingsForBuy,
+                                safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("TownRankingListView(Buy, Dark mode)")
+        }
     }
 }
