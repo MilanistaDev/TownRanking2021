@@ -45,6 +45,31 @@ struct UpperTabView: View {
 
 struct UpperTabView_Previews: PreviewProvider {
     static var previews: some View {
-        UpperTabView(selection: .constant(.rent), geometrySize: UIScreen.main.bounds.size)
+        Group {
+            UpperTabView(selection: .constant(.rent),
+                         geometrySize: UIScreen.main.bounds.size)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("Upper Tab(Rent, Light mode)")
+            UpperTabView(selection: .constant(.rent),
+                         geometrySize: UIScreen.main.bounds.size)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Upper Tab(Rent, Dark mode)")
+            UpperTabView(selection: .constant(.buy),
+                         geometrySize: UIScreen.main.bounds.size)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("Upper Tab(Buy, Light mode)")
+            UpperTabView(selection: .constant(.buy),
+                         geometrySize: UIScreen.main.bounds.size)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Upper Tab(Buy, Dark mode)")
+        }
     }
 }
