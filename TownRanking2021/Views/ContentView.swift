@@ -15,6 +15,7 @@ enum TabType: Int {
 struct ContentView: View {
     @State private var selection: TabType = .rent
     @ObservedObject private var townRankingVM = TownRankingViewModel()
+    private let webLink = "https://www.homes.co.jp/cont/s_ranking/shutoken/"
     
     var body: some View {
         GeometryReader { geometry in
@@ -29,6 +30,13 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.bottom)
                 .navigationBarTitle("住みたい街ランキング2021(首都圏)",
                                     displayMode: .inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Link(destination: URL(string: webLink)!) {
+                            Image(systemName: "safari")
+                        }
+                    }
+                }
             }
         }
     }
