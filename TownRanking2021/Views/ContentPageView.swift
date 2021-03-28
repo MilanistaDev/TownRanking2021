@@ -33,8 +33,35 @@ struct ContentPageView: View {
 
 struct ContentPageView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentPageView(selection: .constant(.rent),
-                        townRankingData: dummyTownRankingData,
-                        safeAreaBottomHeight: .zero)
+        Group {
+            ContentPageView(selection: .constant(.rent),
+                            townRankingData: dummyTownRankingData,
+                            safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("ContentPageView(Rent, Light mode)")
+            ContentPageView(selection: .constant(.rent),
+                            townRankingData: dummyTownRankingData,
+                            safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("ContentPageView(Rent, Dark mode)")
+            ContentPageView(selection: .constant(.buy),
+                            townRankingData: dummyTownRankingData,
+                            safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("ContentPageView(Buy, Light mode)")
+            ContentPageView(selection: .constant(.buy),
+                            townRankingData: dummyTownRankingData,
+                            safeAreaBottomHeight: .zero)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("ContentPageView(Buy, Dark mode)")
+        }
     }
 }
