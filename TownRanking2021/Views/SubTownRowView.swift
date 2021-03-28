@@ -70,14 +70,31 @@ struct SubTownRowView: View {
 
 struct SubTownRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SubTownRowView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent[0])
-            .previewLayout(PreviewLayout.sizeThatFits)
-            .padding()
-        SubTownRowView(selection: .buy, townInfo: dummyTownRankingData.townRankingsForBuy[0])
-            .previewLayout(PreviewLayout.sizeThatFits)
-            .padding()
-        SubTownRowView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent[0])
-            .previewLayout(PreviewLayout.sizeThatFits)
-            .padding()
+        Group {
+            SubTownRowView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent[4])
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("Rank 11, Rent, Light mode")
+            SubTownRowView(selection: .rent, townInfo: dummyTownRankingData.townRankingsForRent[4])
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Rank 11, Rent, Dark mode")
+            SubTownRowView(selection: .buy, townInfo: dummyTownRankingData.townRankingsForBuy[4])
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("Rank 11, Buy, Light mode")
+            SubTownRowView(selection: .buy, townInfo: dummyTownRankingData.townRankingsForBuy[4])
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Rank 11, Buy, Dark mode")
+        }
     }
 }
